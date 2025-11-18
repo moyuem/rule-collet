@@ -1,0 +1,20 @@
+# 规则名称: Spotify
+# 规则统计: 13
+
+domain_suffix_set:
+  - pscdn.co
+  - scdn.co
+  - spoti.fi
+  - spotify.com
+  - spotify.design
+  - spotify.dev
+  - spotifycdn.com
+  - spotifycdn.net
+  - spotifycharts.com
+  - spotifycodes.com
+  - spotifyforartists.com
+  - spotifyjobs.com
+  - spotifynewsroom.com
+
+domain_keyword_set:
+  - spotify
