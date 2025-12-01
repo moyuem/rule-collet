@@ -422,10 +422,10 @@ rules:
   - RULE-SET,netflix,流媒体,no-resolve
   - RULE-SET,hulu,流媒体,no-resolve
   - RULE-SET,disney,流媒体,no-resolve
-  - RULE-SET,hbo,流媒体.no-resolve
+  - RULE-SET,hbo,流媒体,no-resolve
   - RULE-SET,amazon,手动选择,no-resolve
   - RULE-SET,bahamut,Bahamut,no-resolve
-  - RULE-SET,aws,手动选择,no,resolve
+  - RULE-SET,aws,手动选择,no-resolve
   - RULE-SET,azure,手动选择,no-resolve
   - RULE-SET,digitalocean,手动选择,no-resolve
   - RULE-SET,heroku,手动选择,no-resolve
