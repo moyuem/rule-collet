@@ -61,7 +61,7 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
-    icon: https://eraw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+    icon: https://raw.githubusercontent.com/moyuem/rule-collet/main/icon/X.png
 
   - name: Bilibili
     type: select
