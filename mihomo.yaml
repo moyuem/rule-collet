@@ -1,0 +1,451 @@
+proxy-groups:
+  - name: 手动选择
+    type: select
+    include-all: true
+    icon: https://gcore.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
+
+  - name: 故障转移
+    type: fallback
+    proxies:
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - 手动选择
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+    url: https://cp.cloudflare.com/generate_204
+    interval: 180
+    tolerance: 20
+    lazy: false
+
+  - name: AI
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/chatgpt.png
+
+  - name: Telegram
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
+
+  - name: YouTube
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
+
+  - name: SocialMedia
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://eraw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
+
+  - name: Bilibili
+    type: select
+    proxies:
+      - DIRECT
+      - 台湾节点
+      - 香港节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
+
+  - name: 流媒体
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+
+  - name: Spotify
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
+
+  - name: TikTok
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
+
+  - name: Bahamut
+    type: select
+    proxies:
+      - 台湾节点
+      - 手动选择
+    icon: https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
+
+  - name: Crypto
+    type: select
+    proxies:
+      - 手动选择
+      - 香港节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+    icon: https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
+
+  - name: 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - REJECT-DROP
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
+
+
+  - name: 香港节点
+    icon: >-
+      https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+    include-all: true
+    filter: "(?i)香港|港|HK|hk|Hong Kong|HongKong|hongkong|\U0001F1ED\U0001F1F0"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+  - name: 新加坡节点
+    icon: >-
+      https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+    include-all: true
+    filter: "(?i)新加坡|坡|狮城|SG|Singapore|\U0001F1F8\U0001F1EC"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+  - name: 日本节点
+    icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png'
+    include-all: true
+    filter: "(?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|\U0001F1EF\U0001F1F5"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+  - name: 美国节点
+    icon: >-
+      https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+    include-all: true
+    filter: "(?i)美国|美|US|United States|\U0001F1FA\U0001F1F8"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+  - name: 台湾节点
+    icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png'
+    include-all: true
+    filter: "(?i)台|Seednet|Hinet|TW|Taiwan|\U0001F1F9\U0001F1FC"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+rule-providers:
+  category-ads-all:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ads-all.mrs
+    path: ./ruleset/category-ads-all.mrs
+    interval: 86400
+  category-ai-!cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs
+    path: ./ruleset/category-ai-!cn.mrs
+    interval: 86400
+  bilibili:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bilibili.mrs
+    path: ./ruleset/bilibili.mrs
+    interval: 86400
+  youtube:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs
+    path: ./ruleset/youtube.mrs
+    interval: 86400
+  google:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
+    path: ./ruleset/google.mrs
+    interval: 86400
+  geolocation-cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+    path: ./ruleset/geolocation-cn.mrs
+    interval: 86400
+  cn:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+    path: ./ruleset/cn.mrs
+    interval: 86400
+  github:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs
+    path: ./ruleset/github.mrs
+    interval: 86400
+  gitlab:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gitlab.mrs
+    path: ./ruleset/gitlab.mrs
+    interval: 86400
+  microsoft:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs
+    path: ./ruleset/microsoft.mrs
+    interval: 86400
+  facebook:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/facebook.mrs
+    path: ./ruleset/facebook.mrs
+    interval: 86400
+  instagram:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/instagram.mrs
+    path: ./ruleset/instagram.mrs
+    interval: 86400
+  twitter:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs
+    path: ./ruleset/twitter.mrs
+    interval: 86400
+  tiktok:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs
+    path: ./ruleset/tiktok.mrs
+    interval: 86400
+  linkedin:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/linkedin.mrs
+    path: ./ruleset/linkedin.mrs
+    interval: 86400
+  netflix:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs
+    path: ./ruleset/netflix.mrs
+    interval: 86400
+  hulu:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hulu.mrs
+    path: ./ruleset/hulu.mrs
+    interval: 86400
+  disney:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/disney.mrs
+    path: ./ruleset/disney.mrs
+    interval: 86400
+  hbo:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/hbo.mrs
+    path: ./ruleset/hbo.mrs
+    interval: 86400
+  amazon:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/amazon.mrs
+    path: ./ruleset/amazon.mrs
+    interval: 86400
+  bahamut:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/bahamut.mrs
+    path: ./ruleset/bahamut.mrs
+    interval: 86400
+  aws:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/aws.mrs
+    path: ./ruleset/aws.mrs
+    interval: 86400
+  azure:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/azure.mrs
+    path: ./ruleset/azure.mrs
+    interval: 86400
+  digitalocean:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/digitalocean.mrs
+    path: ./ruleset/digitalocean.mrs
+    interval: 86400
+  heroku:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/heroku.mrs
+    path: ./ruleset/heroku.mrs
+    interval: 86400
+  dropbox:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/dropbox.mrs
+    path: ./ruleset/dropbox.mrs
+    interval: 86400
+  geolocation-!cn:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+    path: ./ruleset/geolocation-!cn.mrs
+    interval: 86400
+  telegram:
+    type: http
+    format: mrs
+    behavior: ipcidr
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
+    path: ./ruleset/telegram.mrs
+    interval: 86400
+rules:
+  - RULE-SET,category-ads-all,广告拦截
+  - RULE-SET,category-ai-!cn,AI,no-resolve
+  - RULE-SET,bilibili,Bilibili,no-resolve
+  - RULE-SET,youtube,YouTube,no-resolve
+  - RULE-SET,google,手动选择,no-resolve
+  - RULE-SET,geolocation-cn,DIRECT
+  - RULE-SET,cn,DIRECT
+  - RULE-SET,github,手动选择,no-resolve
+  - RULE-SET,gitlab,手动选择,no-resolve
+  - RULE-SET,microsoft,手动选择
+  - RULE-SET,facebook,SocialMedia
+  - RULE-SET,instagram,SocialMedia
+  - RULE-SET,twitter,SocialMedia
+  - RULE-SET,tiktok,TikTok
+  - RULE-SET,linkedin,SocialMedia
+  - RULE-SET,netflix,流媒体,no-resolve
+  - RULE-SET,hulu,流媒体,no-resolve
+  - RULE-SET,disney,流媒体,no-resolve
+  - RULE-SET,hbo,流媒体.no-resolve
+  - RULE-SET,amazon,手动选择,no-resolve
+  - RULE-SET,bahamut,Bahamut,no-resolve
+  - RULE-SET,aws,手动选择,no,resolve
+  - RULE-SET,azure,手动选择,no-resolve
+  - RULE-SET,digitalocean,手动选择,no-resolve
+  - RULE-SET,heroku,手动选择,no-resolve
+  - RULE-SET,dropbox,手动选择,no-resolve
+  - RULE-SET,geolocation-!cn,手动选择,no-resolve
+  - RULE-SET,telegram,Telegram,no-resolve
+  - MATCH,手动选择,no-resolve
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver: [223.5.5.5, 119.29.29.29]
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
+    fallback: ['https://doh-pure.onedns.net/dns-query', 'https://ada.openbld.net/dns-query', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query']
+    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
