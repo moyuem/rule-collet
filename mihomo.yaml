@@ -1,4 +1,15 @@
 proxy-groups:
+  - name: 选择代理
+    icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png'
+    type: select
+    proxies:
+      - 故障转移
+      - 香港节点
+      - 日本节点
+      - 新加坡节点
+      - 台湾节点
+      - 美国节点
+      - 手动选择
   - name: 手动选择
     type: select
     include-all: true
@@ -408,12 +419,12 @@ rules:
   - RULE-SET,category-ai-!cn,AI
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,youtube,YouTube
-  - RULE-SET,google,手动选择,no-resolve
+  - RULE-SET,google,选择代理,no-resolve
   - RULE-SET,geolocation-cn,DIRECT
   - RULE-SET,cn,DIRECT,no-resolve
-  - RULE-SET,github,手动选择
-  - RULE-SET,gitlab,手动选择
-  - RULE-SET,microsoft,手动选择
+  - RULE-SET,github,选择代理
+  - RULE-SET,gitlab,选择代理
+  - RULE-SET,microsoft,选择代理
   - RULE-SET,facebook,SocialMedia
   - RULE-SET,instagram,SocialMedia
   - RULE-SET,twitter,SocialMedia
@@ -425,21 +436,21 @@ rules:
   - RULE-SET,hulu,流媒体
   - RULE-SET,disney,流媒体
   - RULE-SET,hbo,流媒体
-  - RULE-SET,amazon,手动选择
+  - RULE-SET,amazon,选择代理
   - RULE-SET,bahamut,Bahamut
 
   # 云服务
-  - RULE-SET,aws,手动选择
-  - RULE-SET,azure,手动选择
-  - RULE-SET,digitalocean,手动选择
-  - RULE-SET,heroku,手动选择
-  - RULE-SET,dropbox,手动选择
+  - RULE-SET,aws,选择代理
+  - RULE-SET,azure,选择代理
+  - RULE-SET,digitalocean,选择代理
+  - RULE-SET,heroku,选择代理
+  - RULE-SET,dropbox,选择代理
   # 海外域名匹配
-  - RULE-SET,geolocation-!cn,手动选择
+  - RULE-SET,geolocation-!cn,选择代理
   # Telegram
   - RULE-SET,telegram,Telegram,no-resolve
   # Fallback
-  - MATCH,手动选择
+  - MATCH,选择代理
 
 
 port: 7890
