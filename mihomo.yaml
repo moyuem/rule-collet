@@ -405,44 +405,44 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,category-ads-all,广告拦截
-  - RULE-SET,category-ai-!cn,AI,no-resolve
-  - RULE-SET,bilibili,Bilibili,no-resolve
-  - RULE-SET,youtube,YouTube,no-resolve
-  - RULE-SET,google,手动选择,no-resolve
+  - RULE-SET,category-ai-!cn,AI
+  - RULE-SET,bilibili,Bilibili
+  - RULE-SET,youtube,YouTube
+  - RULE-SET,google,手动选择
   - RULE-SET,geolocation-cn,DIRECT
   - RULE-SET,cn,DIRECT
-  - RULE-SET,github,手动选择,no-resolve
-  - RULE-SET,gitlab,手动选择,no-resolve
-  - RULE-SET,microsoft,手动选择,no-resolve
-  - RULE-SET,facebook,SocialMedia,no-resolve
-  - RULE-SET,instagram,SocialMedia,no-resolve
-  - RULE-SET,twitter,SocialMedia,no-resolve
-  - RULE-SET,tiktok,TikTok,no-resolve
-  - RULE-SET,linkedin,SocialMedia,no-resolve
+  - RULE-SET,github,手动选择
+  - RULE-SET,gitlab,手动选择
+  - RULE-SET,microsoft,手动选择
+  - RULE-SET,facebook,SocialMedia
+  - RULE-SET,instagram,SocialMedia
+  - RULE-SET,twitter,SocialMedia
+  - RULE-SET,tiktok,TikTok
+  - RULE-SET,linkedin,SocialMedia
 
   # 流媒体（全部域名类规则）
-  - RULE-SET,netflix,流媒体,no-resolve
-  - RULE-SET,hulu,流媒体,no-resolve
-  - RULE-SET,disney,流媒体,no-resolve
-  - RULE-SET,hbo,流媒体,no-resolve
-  - RULE-SET,amazon,手动选择,no-resolve
-  - RULE-SET,bahamut,Bahamut,no-resolve
+  - RULE-SET,netflix,流媒体
+  - RULE-SET,hulu,流媒体
+  - RULE-SET,disney,流媒体
+  - RULE-SET,hbo,流媒体
+  - RULE-SET,amazon,手动选择
+  - RULE-SET,bahamut,Bahamut
 
   # 云服务
-  - RULE-SET,aws,手动选择,no-resolve
-  - RULE-SET,azure,手动选择,no-resolve
-  - RULE-SET,digitalocean,手动选择,no-resolve
-  - RULE-SET,heroku,手动选择,no-resolve
-  - RULE-SET,dropbox,手动选择,no-resolve
+  - RULE-SET,aws,手动选择
+  - RULE-SET,azure,手动选择
+  - RULE-SET,digitalocean,手动选择
+  - RULE-SET,heroku,手动选择
+  - RULE-SET,dropbox,手动选择
 
   # 海外域名匹配
-  - RULE-SET,geolocation-!cn,手动选择,no-resolve
+  - RULE-SET,geolocation-!cn,手动选择
 
   # Telegram（GeoIP）
-  - RULE-SET,telegram,Telegram,no-resolve
+  - RULE-SET,telegram,Telegram
 
   # Fallback
-  - MATCH,手动选择,no-resolve
+  - MATCH,手动选择
 
 port: 7890
 socks-port: 7891
