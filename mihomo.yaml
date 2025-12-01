@@ -433,19 +433,64 @@ rules:
   - RULE-SET,geolocation-!cn,手动选择,no-resolve
   - RULE-SET,telegram,Telegram,no-resolve
   - MATCH,手动选择,no-resolve
-mixed-port: 7890
-allow-lan: true
-bind-address: '*'
+port: 7890
+socks-port: 7891
+allow-lan: false
 mode: rule
 log-level: info
-external-controller: '127.0.0.1:9090'
+geodata-mode: true
+geo-auto-update: true
+geodata-loader: standard
+geo-update-interval: 24
+geox-url:
+  geoip: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: >-
+    https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: >-
+    https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb
+    sniffer:
+  sniff:
+    TLS:
+      ports:
+        - 443
+        - 8443
+    HTTP:
+      ports:
+        - 80
+        - 8080
+        - 8880
+    QUIC:
+      ports:
+        - 443
+        - 8443
+  override-destination: false
+  enable: true
+  force-dns-mapping: true
+  skip-domain:
+    - Mijia Cloud
+    - dlg.io.mi.com
+    - +.push.apple.com
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-    fallback: ['https://doh-pure.onedns.net/dns-query', 'https://ada.openbld.net/dns-query', 'https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query']
-    fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  enable: true
+  ipv6: true
+  prefer-h3: true
+  enhanced-mode: redir-host
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  nameserver:
+    - system
+    - 223.5.5.5
+    - 119.29.29.29
+    - 180.184.1.1
+  fallback:
+    - 'quic://dns0.eu'
+    - 'https://dns.cloudflare.com/dns-query'
+    - 'https://dns.sb/dns-query'
+    - 'tcp://208.67.222.222'
+    - 'tcp://8.26.56.2'
+  proxy-server-nameserver:
+    - 'https://dns.alidns.com/dns-query'
+    - 'tls://dot.pub'
