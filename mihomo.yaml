@@ -33,7 +33,7 @@ proxy-groups:
   - name: AI
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -44,7 +44,7 @@ proxy-groups:
   - name: Telegram
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -55,7 +55,7 @@ proxy-groups:
   - name: YouTube
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -66,7 +66,7 @@ proxy-groups:
   - name: SocialMedia
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -80,12 +80,13 @@ proxy-groups:
       - DIRECT
       - 台湾节点
       - 香港节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
 
   - name: 流媒体
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -96,7 +97,7 @@ proxy-groups:
   - name: Spotify
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -107,25 +108,26 @@ proxy-groups:
   - name: TikTok
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
       - 美国节点
       - 台湾节点
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-
+    
   - name: Bahamut
+    icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png'
     type: select
     proxies:
       - 台湾节点
-      - 手动选择
-    icon: https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
-
+      - 香港节点
+      - 选择代理
+  
   - name: Crypto
     type: select
     proxies:
-      - 手动选择
+      - 选择代理
       - 香港节点
       - 新加坡节点
       - 日本节点
@@ -294,6 +296,14 @@ rule-providers:
       https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/twitter.mrs
     path: ./ruleset/twitter.mrs
     interval: 86400
+  spotify:
+    type: http
+    format: mrs
+    behavior: domain
+    url: >-
+      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs
+    path: ./ruleset/spotify.mrs
+    interval: 86400
   tiktok:
     type: http
     format: mrs
@@ -318,6 +328,14 @@ rule-providers:
       https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs
     path: ./ruleset/netflix.mrs
     interval: 86400
+  SteamFix:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: >-
+      https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/SteamFix.list
+    path: ./ruleset/SteamFix.list
   hulu:
     type: http
     format: mrs
@@ -414,6 +432,14 @@ rule-providers:
       https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
     path: ./ruleset/telegram.mrs
     interval: 86400
+  Crypto:
+    type: http
+    behavior: classical
+    format: text
+    interval: 86400
+    url: >-
+      https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/Crypto.list
+    path: ./ruleset/Crypto.list
 rules:
   - RULE-SET,category-ads-all,广告拦截
   - RULE-SET,category-ai-!cn,AI
@@ -424,13 +450,19 @@ rules:
   - RULE-SET,cn,DIRECT,no-resolve
   - RULE-SET,github,选择代理
   - RULE-SET,gitlab,选择代理
+  - GEOSITE,MICROSOFT@CN,DIRECT
   - RULE-SET,microsoft,选择代理
   - RULE-SET,facebook,SocialMedia
   - RULE-SET,instagram,SocialMedia
   - RULE-SET,twitter,SocialMedia
   - RULE-SET,tiktok,TikTok
   - RULE-SET,linkedin,SocialMedia
-
+  - RULE-SET,Crypto,Crypto
+  - RULE-SET,SteamFix,DIRECT
+  - RULE-SET,spotify,Spotify
+  - DOMAIN,services.googleapis.cn,选择代理
+  - GEOIP,PRIVATE,DIRECT
+  - GEOSITE,PRIVATE,DIRECT
   # 流媒体
   - RULE-SET,netflix,流媒体
   - RULE-SET,hulu,流媒体
