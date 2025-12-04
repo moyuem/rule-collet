@@ -463,6 +463,8 @@ rules:
   - DOMAIN,services.googleapis.cn,选择代理
   - GEOIP,PRIVATE,DIRECT
   - GEOSITE,PRIVATE,DIRECT
+  - DOMAIN-SUFFIX,tohu.cloud,DIRECT
+
   # 流媒体
   - RULE-SET,netflix,流媒体
   - RULE-SET,hulu,流媒体
