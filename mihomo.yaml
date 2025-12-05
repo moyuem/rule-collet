@@ -3,13 +3,14 @@ proxy-groups:
     icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png'
     type: select
     proxies:
-      - 故障转移
       - 香港节点
-      - 日本节点
-      - 新加坡节点
       - 台湾节点
+      - 新加坡节点
+      - 日本节点
       - 美国节点
-      - 手动选择
+      - 手动选择    
+      - 故障转移
+  
   - name: 手动选择
     type: select
     include-all: true
@@ -19,10 +20,10 @@ proxy-groups:
     type: fallback
     proxies:
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
       - 手动选择
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
     url: https://cp.cloudflare.com/generate_204
@@ -33,87 +34,90 @@ proxy-groups:
   - name: AI
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/chatgpt.png
 
   - name: Telegram
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
 
   - name: YouTube
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
 
   - name: SocialMedia
     type: select
-    proxies:
-      - 选择代理
+   proxies:
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://raw.githubusercontent.com/moyuem/rule-collet/main/icon/X.png
 
   - name: Bilibili
     type: select
     proxies:
       - DIRECT
-      - 台湾节点
       - 香港节点
+      - 台湾节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
 
   - name: 流媒体
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
 
   - name: Spotify
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
 
   - name: TikTok
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
     
   - name: Bahamut
@@ -127,12 +131,12 @@ proxy-groups:
   - name: Crypto
     type: select
     proxies:
-      - 选择代理
       - 香港节点
+      - 台湾节点
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 台湾节点
+      - 选择代理
     icon: https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
 
   - name: 广告拦截
