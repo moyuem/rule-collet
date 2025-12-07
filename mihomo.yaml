@@ -170,7 +170,7 @@ proxy-groups:
   - name: 日本节点
     icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png'
     include-all: true
-    filter: "(?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|\U0001F1EF\U0001F1F5"
+    filter: "(?i)日本|东京|大阪|泉日|沪日|深日|JP|Japan|\U0001F1EF\U0001F1F5"
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
     interval: 60
@@ -189,7 +189,7 @@ proxy-groups:
   - name: 台湾节点
     icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png'
     include-all: true
-    filter: "(?i)台|Seednet|Hinet|TW|Taiwan|\U0001F1F9\U0001F1FC"
+    filter: "(?i)台|Seednet|Hinet|TW|Taiwan|Dada|Tbc|\U0001F1F9\U0001F1FC"
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
     interval: 60
