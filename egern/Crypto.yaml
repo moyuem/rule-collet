@@ -1,1 +1,49 @@
+# 规则名称: Crypto
+# 规则统计: 38
+
+domain_suffix_set:
+  # Exchanges (CEX)
+  - binance.com
+  - binance.us
+  - okx.com
+  - okex.com
+  - coinbase.com
+  - kraken.com
+  - bybit.com
+  - kucoin.com
+  - gate.io
+  - bitget.com
+  - mexc.com
+  - htx.com
+  - huobi.com
+  - upbit.com
+  - bithumb.com
+  - bitfinex.com
+  - gemini.com
+
+  # Wallets
+  - tronlink.org
+  - tronlink.casa
+  - metamask.io
+  - trustwallet.com
+  - token.im
+  - phantom.app
+  - keplr.app
+  - rabby.io
+  - tokenpocket.pro
+  - ledger.com
+  - trezor.io
+
+domain_keyword_set:
+  # Use only low-ambiguity keywords (avoid: gemini, gate, mexc, okx, htx)
+  - binance
+  - coinbase
+  - kucoin
+  - bybit
+  - bitget
+  - huobi
+  - tronlink
+  - metamask
+  - trustwallet
+  - tokenpocket
 
