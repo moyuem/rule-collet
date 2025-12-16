@@ -269,7 +269,7 @@ rules:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Twitter.yaml
     policy: Twitter
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/refs/heads/X/Surge/Rules/Crypto.list
+    match: https://raw.githubusercontent.com/moyuem/rule-collet/refs/heads/main/egern/Crypto.yaml
     policy: Crypto
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Bahamut.yaml
