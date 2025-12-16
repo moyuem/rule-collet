@@ -1,5 +1,5 @@
 # 规则名称: Crypto
-# 规则统计: 38
+# 规则统计: 44
 
 domain_suffix_set:
   # Exchanges (CEX)
@@ -7,15 +7,25 @@ domain_suffix_set:
   - binance.us
   - okx.com
   - okex.com
+  - okx-dns1.com
+  - okx-dns2.com
+  - mokexapp.com
+  - bybit.com
+  - bybitglobal.com
+  - bybit-global.com
+  - bybit.biz
+  - bybit.cloud
+  - bybit.ada.support
   - coinbase.com
   - kraken.com
-  - bybit.com
   - kucoin.com
   - gate.io
   - bitget.com
   - mexc.com
   - htx.com
+  - htx.co.nz
   - huobi.com
+  - hbfile.net
   - upbit.com
   - bithumb.com
   - bitfinex.com
@@ -35,15 +45,14 @@ domain_suffix_set:
   - trezor.io
 
 domain_keyword_set:
-  # Use only low-ambiguity keywords (avoid: gemini, gate, mexc, okx, htx)
+  # Low-ambiguity only
   - binance
   - coinbase
+  - kraken
   - kucoin
   - bybit
   - bitget
-  - huobi
   - tronlink
   - metamask
   - trustwallet
   - tokenpocket
-
