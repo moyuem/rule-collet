@@ -446,6 +446,8 @@ rule-providers:
     path: ./ruleset/Crypto.list
 rules:
   - RULE-SET,category-ads-all,广告拦截
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT
   - RULE-SET,category-ai-!cn,AI
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,youtube,YouTube
@@ -466,8 +468,7 @@ rules:
   - GEOIP,PRIVATE,DIRECT
   - GEOSITE,PRIVATE,DIRECT
   - DOMAIN-SUFFIX,tohu.cloud,DIRECT
-  - GEOSITE,CN,DIRECT
-  - GEOIP,CN,DIRECT
+
   # 流媒体
   - RULE-SET,netflix,流媒体
   - RULE-SET,hulu,流媒体
