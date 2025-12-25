@@ -444,10 +444,18 @@ rule-providers:
     url: >-
       https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/ruleset/Crypto.list
     path: ./ruleset/Crypto.list
+  Pcdn_cn:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/moyuem/rule-collet/main/mihomo/Pcdn_block.yaml
+    path: ./ruleset/Pcdn_block.yaml
+    interval: 86400
 rules:
   - RULE-SET,category-ads-all,广告拦截
   - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT
+  - RULE-SET,Pcdn_cn,广告拦截
   - RULE-SET,category-ai-!cn,AI
   - RULE-SET,bilibili,Bilibili
   - RULE-SET,youtube,YouTube
