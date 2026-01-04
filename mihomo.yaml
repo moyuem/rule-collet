@@ -453,8 +453,6 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,category-ads-all,广告拦截
-  - GEOSITE,CN,DIRECT
-  - GEOIP,CN,DIRECT
   - RULE-SET,Pcdn_cn,广告拦截
   - RULE-SET,category-ai-!cn,AI
   - RULE-SET,bilibili,Bilibili
@@ -493,6 +491,8 @@ rules:
 
   - RULE-SET,geolocation-!cn,选择代理
   - RULE-SET,telegram,Telegram,no-resolve
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT
   - MATCH,选择代理
 
 
