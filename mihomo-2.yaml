@@ -450,7 +450,7 @@ rules:
   - DOMAIN-SUFFIX,sharethis.com,手动选择
   - DOMAIN-SUFFIX,shazam.com,手动选择
   - DOMAIN-SUFFIX,skype.com,手动选择
-  - DOMAIN-SUFFIX,smartdns手动选择.com,手动选择
+  - DOMAIN-SUFFIX,smartdns.com,手动选择
   - DOMAIN-SUFFIX,smartmailcloud.com,手动选择
   - DOMAIN-SUFFIX,sndcdn.com,手动选择
   - DOMAIN-SUFFIX,sony.com,手动选择
