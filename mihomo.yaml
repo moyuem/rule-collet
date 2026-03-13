@@ -98,7 +98,7 @@ proxy-groups:
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     
-- name: Google
+  - name: Google
     type: select
     proxies:
       - 香港节点
