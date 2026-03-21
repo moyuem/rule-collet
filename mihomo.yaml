@@ -333,8 +333,8 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    path: ./rule-providers/emby.yaml
-    url: "https://raw.githubusercontent.com/moyuem/rule-collet/refs/heads/main/mihomo/emby.yaml"
+    url: https://raw.githubusercontent.com/moyuem/rule-collet/refs/heads/main/mihomo/emby.yaml
+    path: ./ruleset/emby.yaml
     interval: 86400
   tiktok:
     type: http
