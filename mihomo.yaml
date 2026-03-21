@@ -97,6 +97,16 @@ proxy-groups:
       - 美国节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+  - name: Emby
+    type: select
+    proxies:
+      - 香港节点
+      - 台湾节点
+      - 新加坡节点
+      - 日本节点
+      - 美国节点
+      - 选择代理
+    icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
     
   - name: Google
     type: select
@@ -319,6 +329,13 @@ rule-providers:
       https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/spotify.mrs
     path: ./ruleset/spotify.mrs
     interval: 86400
+  emby:
+    type: http
+    behavior: domain
+    format: yaml
+    path: ./rule-providers/emby.yaml
+    url: "https://raw.githubusercontent.com/moyuem/rule-collet/refs/heads/main/mihomo/emby.yaml"
+    interval: 86400
   tiktok:
     type: http
     format: mrs
@@ -467,6 +484,7 @@ rules:
   - RULE-SET,Pcdn_cn,广告拦截
   - RULE-SET,category-ai-!cn,AI
   - RULE-SET,bilibili,Bilibili
+  - RULE-SET,SteamFix,DIRECT
   - RULE-SET,youtube,YouTube
   - RULE-SET,google,Google,no-resolve
   - RULE-SET,github,选择代理
@@ -479,7 +497,7 @@ rules:
   - RULE-SET,tiktok,TikTok
   - RULE-SET,linkedin,SocialMedia
   - RULE-SET,Crypto,Crypto
-  - RULE-SET,SteamFix,DIRECT
+  - RULE-SET,emby,Emby
   - RULE-SET,spotify,Spotify
   - DOMAIN,services.googleapis.cn,选择代理
   - GEOIP,PRIVATE,DIRECT
