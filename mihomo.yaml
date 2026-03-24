@@ -8,9 +8,10 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
-      - 手动选择    
+      - 欧洲节点
+      - 手动选择
       - 故障转移
-  
+
   - name: 手动选择
     type: select
     include-all: true
@@ -24,7 +25,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
-
+      - 欧洲节点
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
     url: https://cp.cloudflare.com/generate_204
     interval: 180
@@ -39,6 +40,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/powerfullz/override-rules@master/icons/chatgpt.png
 
@@ -50,6 +52,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
 
@@ -61,6 +64,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
 
@@ -72,6 +76,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://raw.githubusercontent.com/moyuem/rule-collet/main/icon/X.png
 
@@ -84,6 +89,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
 
@@ -95,8 +101,10 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
+
   - name: Emby
     type: select
     proxies:
@@ -105,10 +113,11 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
       - DIRECT
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Emby.png
-    
+
   - name: Google
     type: select
     proxies:
@@ -117,9 +126,10 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
-    
+
   - name: Spotify
     type: select
     proxies:
@@ -128,6 +138,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Spotify.png
 
@@ -139,9 +150,10 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/TikTok.png
-    
+
   - name: Bahamut
     icon: 'https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png'
     type: select
@@ -149,7 +161,7 @@ proxy-groups:
       - 台湾节点
       - 香港节点
       - 选择代理
-  
+
   - name: Crypto
     type: select
     proxies:
@@ -158,6 +170,7 @@ proxy-groups:
       - 新加坡节点
       - 日本节点
       - 美国节点
+      - 欧洲节点
       - 选择代理
     icon: https://cdn.jsdmirror.com/gh/Koolson/Qure@master/IconSet/Color/Cryptocurrency_3.png
 
@@ -167,7 +180,6 @@ proxy-groups:
       - REJECT
       - REJECT-DROP
     icon: https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
-
 
   - name: 香港节点
     icon: >-
@@ -179,6 +191,7 @@ proxy-groups:
     interval: 60
     tolerance: 20
     lazy: false
+
   - name: 新加坡节点
     icon: >-
       https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
@@ -189,6 +202,7 @@ proxy-groups:
     interval: 60
     tolerance: 20
     lazy: false
+
   - name: 日本节点
     icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png'
     include-all: true
@@ -198,6 +212,7 @@ proxy-groups:
     interval: 60
     tolerance: 20
     lazy: false
+
   - name: 美国节点
     icon: >-
       https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
@@ -208,10 +223,22 @@ proxy-groups:
     interval: 60
     tolerance: 20
     lazy: false
+
   - name: 台湾节点
     icon: 'https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png'
     include-all: true
     filter: "(?i)台|Seednet|Hinet|TW|Taiwan|Dada|Tbc|\U0001F1F9\U0001F1FC"
+    type: url-test
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 60
+    tolerance: 20
+    lazy: false
+
+  - name: 欧洲节点
+    icon: >-
+      https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/European_Union.png
+    include-all: true
+    filter: "(?i)德国|德|法国|法|英國|英国|英|荷兰|荷|義大利|意大利|義|意|German|Germany|France|French|UK|United Kingdom|Britain|British|England|Netherlands|Dutch|Italy|Italian|\U0001F1E9\U0001F1EA|\U0001F1EB\U0001F1F7|\U0001F1EC\U0001F1E7|\U0001F1F3\U0001F1F1|\U0001F1EE\U0001F1F9"
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
     interval: 60
