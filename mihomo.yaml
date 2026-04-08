@@ -14,7 +14,6 @@ proxy-groups:
 
   - name: 手动选择
     type: select
-    filter: "^(?!🇭🇰 花云$).*"
     include-all: true
     icon: https://gcore.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
 
@@ -186,7 +185,7 @@ proxy-groups:
     icon: >-
       https://gcore.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
     include-all: true
-    filter: "(?i)香港|港|HK|hk|Hong Kong|HongKong|hongkong|\U0001F1ED\U0001F1F0"
+    filter: '(?i)^(?!🇭🇰 花云$).*(香港|港|HK|Hong Kong|HongKong|hongkong|🇭🇰)'
     type: url-test
     url: 'https://cp.cloudflare.com/generate_204'
     interval: 60
