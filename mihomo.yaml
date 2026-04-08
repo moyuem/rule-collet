@@ -14,6 +14,7 @@ proxy-groups:
 
   - name: 手动选择
     type: select
+    filter: "^(?!🇭🇰 花云$).*"
     include-all: true
     icon: https://gcore.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
 
