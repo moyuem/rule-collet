@@ -1,10 +1,75 @@
 # 规则名称: Crypto
-# 规则统计: 44
+# 用途: 交易所 / 钱包 / 常见 Web3 基础服务
+
+domain_set:
+  # Binance
+  - www.binance.com
+  - accounts.binance.com
+  - api.binance.com
+  - www.binance.us
+
+  # OKX / OKEX
+  - www.okx.com
+  - app.okx.com
+  - www.okex.com
+
+  # Bybit
+  - www.bybit.com
+  - api.bybit.com
+
+  # Coinbase
+  - www.coinbase.com
+  - accounts.coinbase.com
+  - api.coinbase.com
+  - commerce.coinbase.com
+
+  # Kraken
+  - www.kraken.com
+  - api.kraken.com
+
+  # KuCoin
+  - www.kucoin.com
+  - api.kucoin.com
+
+  # Gate
+  - www.gate.io
+
+  # Bitget
+  - www.bitget.com
+
+  # MEXC
+  - www.mexc.com
+
+  # HTX / Huobi
+  - www.htx.com
+  - www.huobi.com
+
+  # Upbit / Bithumb / Bitfinex / Gemini
+  - www.upbit.com
+  - www.bithumb.com
+  - www.bitfinex.com
+  - exchange.gemini.com
+  - www.gemini.com
+
+  # Wallets
+  - www.tronlink.org
+  - www.metamask.io
+  - portfolio.metamask.io
+  - trustwallet.com
+  - token.im
+  - phantom.app
+  - www.phantom.app
+  - keplr.app
+  - rabby.io
+  - tokenpocket.pro
+  - www.ledger.com
+  - trezor.io
 
 domain_suffix_set:
   # Exchanges (CEX)
   - binance.com
   - binance.us
+  - bnbstatic.com
   - okx.com
   - okex.com
   - okx-dns1.com
@@ -17,6 +82,7 @@ domain_suffix_set:
   - bybit.cloud
   - bybit.ada.support
   - coinbase.com
+  - coinbaseassets.com
   - kraken.com
   - kucoin.com
   - gate.io
@@ -44,15 +110,47 @@ domain_suffix_set:
   - ledger.com
   - trezor.io
 
+  # Web3 infra / signing / wallet connect
+  - walletconnect.com
+  - walletconnect.org
+  - cloud.walletconnect.com
+  - infura.io
+  - infura-ipfs.io
+  - alchemy.com
+  - alchemyapi.io
+
 domain_keyword_set:
-  # Low-ambiguity only
+  # 保留低歧义关键词，避免误伤普通网站
   - binance
   - coinbase
   - kraken
   - kucoin
   - bybit
   - bitget
+  - mexc
   - tronlink
   - metamask
   - trustwallet
   - tokenpocket
+  - walletconnect
+  - rabby
+  - phantom
+  - keplr
+  - ledger
+  - trezor
+
+domain_regex_set:
+  # 子品牌 / 边缘域名 / API / 静态资源
+  - "(^|\\.)okx(app)?\\."
+  - "(^|\\.)bybit([-.].+)?\\."
+  - "(^|\\.)coinbase([-.].+)?\\."
+  - "(^|\\.)kraken([-.].+)?\\."
+  - "(^|\\.)kucoin([-.].+)?\\."
+  - "(^|\\.)bitget([-.].+)?\\."
+  - "(^|\\.)mexc([-.].+)?\\."
+  - "(^|\\.)htx([-.].+)?\\."
+  - "(^|\\.)huobi([-.].+)?\\."
+  - "(^|\\.)metamask([-.].+)?\\."
+  - "(^|\\.)trustwallet([-.].+)?\\."
+  - "(^|\\.)walletconnect([-.].+)?\\."
+  - "(^|\\.)tokenpocket([-.].+)?\\."
