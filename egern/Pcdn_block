@@ -1,5 +1,5 @@
 # 规则名称: Media-PCDN
-# 规则统计: 36
+# 规则统计: 44
 
 domain_suffix_set:
   # B站
@@ -9,6 +9,7 @@ domain_suffix_set:
   - kodo.bilivideo.com
   - mountaintoys.cn
   - szbdyd.com
+  - smtcdns.net
 
   # 腾讯
   - hcdn.video.qq.com
@@ -35,6 +36,7 @@ domain_suffix_set:
   - valf.atm.youku.com
   - static.atm.youku.com
   - valc.atm.youku.com
+
   # 字节
   - pull-rtmp-l11.ixigua.com
   - push-rtmp-l1.ixigua.com
@@ -54,5 +56,13 @@ domain_suffix_set:
 
   # 其他
   - p-cdn.com
-  - pscdn.co
-  - p.scdn.co
+
+domain_wildcard_set:
+  # 现行 Egern 支持通配符规则集，用于覆盖命名波动较大的 PCDN 子域
+  - "*.mcdn.bilivideo.*"
+  - "*.ppio.bilivideo.*"
+  - "*.kodo.bilivideo.*"
+  - "*.pcdn.video.qq.com"
+  - "*.hcdn.video.qq.com"
+  - "*.p2p.douyucdn.cn"
+  - "*trackercdn.kugou.com"

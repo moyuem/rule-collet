@@ -1,13 +1,24 @@
 # 规则名称: Spotify
-# 规则统计: 13
+# 规则统计: 23
+
+domain_set:
+  - accounts.spotify.com
+  - api.spotify.com
+  - open.spotify.com
+  - spclient.wg.spotify.com
+  - audio-ak-spotify-com.akamaized.net
+  - heads4-ak-spotify-com.akamaized.net
 
 domain_suffix_set:
+  - byspotify.com
   - pscdn.co
   - scdn.co
   - spoti.fi
   - spotify.com
   - spotify.design
   - spotify.dev
+  - spotify.link
+  - spotify.com.edgesuite.net
   - spotifycdn.com
   - spotifycdn.net
   - spotifycharts.com

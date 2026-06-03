@@ -1,5 +1,5 @@
 # 规则名称: Meta
-# 规则统计: 23
+# 规则统计: 33
 
 domain_suffix_set:
   - cdninstagram.com
@@ -8,22 +8,32 @@ domain_suffix_set:
   - facebookmail.com
   - fb.com
   - fb.me
+  - fbcdn.com
   - fbcdn.net
+  - fbinfra.net
   - fbsbx.com
+  - fbwat.ch
   - instagram.com
+  - m.me
+  - mapillary.com
   - meta.com
   - metaverse.com
   - messenger.com
   - messengermedia.io
   - oculus.com
+  - oculuscdn.com
+  - oculusvr.com
+  - threads.com
   - threads.net
+  - whatsapp.biz
   - whatsapp.com
   - whatsapp.net
   - workplace.com
+  - workplacecdn.com
+  - wit.ai
 
 domain_keyword_set:
   - facebook
   - instagram
-  - meta
   - oculus
   - whatsapp

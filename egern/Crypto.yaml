@@ -1,31 +1,78 @@
 # 规则名称: Crypto
 # 用途: 交易所 / 钱包 / 常见 Web3 基础服务
+# 规则统计: 272
 
 domain_set:
   # Binance
   - www.binance.com
   - accounts.binance.com
   - api.binance.com
+  - api1.binance.com
+  - api2.binance.com
+  - api3.binance.com
+  - api4.binance.com
+  - fapi.binance.com
+  - dapi.binance.com
+  - eapi.binance.com
+  - stream.binance.com
+  - nbstream.binance.com
+  - fstream.binance.com
+  - dstream.binance.com
+  - ws-api.binance.com
+  - ws-fapi.binance.com
   - www.binance.us
+  - api.binance.us
+  - stream.binance.us
+  - bin.bnbstatic.com
+  - public.bnbstatic.com
+  - frontend-m.binance.cloud
+  - sensors.binance.cloud
+  - report.binance.gg
+  - logan-log.binance.gg
+  - haodesk.binance.im
+  - api.saasexch.com
+  - upload-bnbstatic-com.s3.ap-northeast-1.amazonaws.com
+  - public-1259603563.file.myqcloud.com
+  - static-file-1259603563.file.myqcloud.com
+  - binance-1259603563.file.myqcloud.com
+  - download-1306379396.file.myqcloud.com
+  - static-file-1306379396.file.myqcloud.com
+  - domain-config-1306379396.file.myqcloud.com
 
-  # OKX / OKEX
+  # OKX / OKEX / OKCoin / OKLink
   - www.okx.com
   - app.okx.com
+  - my.okx.com
+  - us.okx.com
+  - eea.okx.com
+  - openapi.okx.com
+  - ws.okx.com
+  - static.okx.com
+  - web3.okx.com
+  - tr.okx.com
   - www.okex.com
+  - www.okcoin.com
+  - www.oklink.com
+  - www.okx.vote
+  - static.okx.vote
 
   # Bybit
   - www.bybit.com
   - api.bybit.com
+  - www.bybitglobal.com
 
   # Coinbase
   - www.coinbase.com
   - accounts.coinbase.com
   - api.coinbase.com
   - commerce.coinbase.com
+  - wallet.coinbase.com
+  - cloud.coinbase.com
 
   # Kraken
   - www.kraken.com
   - api.kraken.com
+  - trade.kraken.com
 
   # KuCoin
   - www.kucoin.com
@@ -36,6 +83,7 @@ domain_set:
 
   # Bitget
   - www.bitget.com
+  - wallet.bitget.com
 
   # MEXC
   - www.mexc.com
@@ -51,29 +99,61 @@ domain_set:
   - exchange.gemini.com
   - www.gemini.com
 
+  # Crypto.com / Bitstamp / BitMart
+  - app.bitstamp.net
+  - www.bitstamp.net
+  - www.bitmart.com
+
   # Wallets
   - www.tronlink.org
   - www.metamask.io
   - portfolio.metamask.io
-  - trustwallet.com
-  - token.im
-  - phantom.app
   - www.phantom.app
-  - keplr.app
-  - rabby.io
-  - tokenpocket.pro
   - www.ledger.com
-  - trezor.io
+
+  # DEX / explorers
+  - app.uniswap.org
+  - app.1inch.io
+  - app.aave.com
 
 domain_suffix_set:
   # Exchanges (CEX)
   - binance.com
   - binance.us
+  - binance.info
+  - binance.me
+  - binance.org
+  - binance.cloud
+  - binanceapi.com
+  - binancecnt.com
+  - binancefuture.com
+  - binancezh.com
+  - binancezh.co
+  - binancezh.cc
+  - binancezh.info
+  - binancezh.top
+  - bnappzh.co
   - bnbstatic.com
+  - bnbzh.ac
+  - bntrace.com
+  - bifinity.com
+  - binance.gg
+  - binance.im
+  - saasexch.com
+  - saasexch.cc
   - okx.com
+  - okx.vote
   - okex.com
+  - okcoin.com
+  - oklink.com
+  - okxcdn.com
+  - okxstatic.com
+  - okx-dns.com
   - okx-dns1.com
   - okx-dns2.com
+  - okx-dns3.com
+  - okx-dns4.com
+  - okx-dns5.com
   - mokexapp.com
   - bybit.com
   - bybitglobal.com
@@ -83,69 +163,151 @@ domain_suffix_set:
   - bybit.ada.support
   - coinbase.com
   - coinbaseassets.com
+  - coinbasecloud.net
+  - coinbasepro.com
   - kraken.com
+  - krakenassets.com
   - kucoin.com
+  - kucoin.plus
   - gate.io
+  - gateimg.com
   - bitget.com
+  - bitgetimg.com
   - mexc.com
+  - mexc.co
+  - mxc.com
   - htx.com
   - htx.co.nz
   - huobi.com
+  - huobi.pro
   - hbfile.net
   - upbit.com
   - bithumb.com
   - bitfinex.com
   - gemini.com
+  - crypto.com
+  - crypto.org
+  - bitstamp.com
+  - bitstamp.net
+  - bitflyer.com
+  - bitflyer.jp
+  - bitmart.com
 
   # Wallets
   - tronlink.org
   - tronlink.casa
   - metamask.io
+  - metamask.app.link
+  - consensys.io
   - trustwallet.com
   - token.im
+  - imtoken.com
   - phantom.app
   - keplr.app
   - rabby.io
   - tokenpocket.pro
+  - tokenpocket.com
+  - bitkeep.com
+  - bitkeepwallet.com
   - ledger.com
   - trezor.io
+  - zerion.io
+  - rainbow.me
+  - argent.xyz
+  - safe.global
+  - exodus.com
 
   # Web3 infra / signing / wallet connect
   - walletconnect.com
   - walletconnect.org
+  - walletconnect.network
   - cloud.walletconnect.com
+  - walletconnectrelay.com
+  - walletconnectrelay.org
+  - wc.link
+  - web3modal.com
   - infura.io
   - infura-ipfs.io
   - alchemy.com
   - alchemyapi.io
+  - moralis.io
+  - ankr.com
+  - quicknode.com
+  - thegraph.com
+  - graphprotocol.com
+  - ipfs.io
+  - ipfs.tech
+  - pinata.cloud
+  - arweave.net
+
+  # Explorers / DeFi / NFT
+  - etherscan.io
+  - bscscan.com
+  - polygonscan.com
+  - arbiscan.io
+  - basescan.org
+  - snowtrace.io
+  - tronscan.org
+  - solscan.io
+  - blockchair.com
+  - dextools.io
+  - defillama.com
+  - coingecko.com
+  - coinmarketcap.com
+  - uniswap.org
+  - aave.com
+  - curve.fi
+  - 1inch.io
+  - pancakeswap.finance
+  - opensea.io
+  - magiceden.io
+  - rarible.com
 
 domain_keyword_set:
   # 保留低歧义关键词，避免误伤普通网站
   - binance
+  - bnbstatic
+  - saasexch
+  - bntrace
+  - okx
+  - okex
   - coinbase
   - kraken
   - kucoin
   - bybit
   - bitget
   - mexc
+  - htx
+  - huobi
   - tronlink
   - metamask
   - trustwallet
+  - imtoken
   - tokenpocket
   - walletconnect
   - rabby
-  - phantom
   - keplr
-  - ledger
-  - trezor
+  - etherscan
+  - bscscan
+  - polygonscan
+  - tronscan
+  - solscan
+  - opensea
 
 domain_regex_set:
   # 子品牌 / 边缘域名 / API / 静态资源
-  - "(^|\\.)okx(app)?\\."
+  - "(^|\\.)binance([-.].+)?\\."
+  - "(^|\\.)binance[a-z0-9-]*\\."
+  - "(^|\\.)bnb(static|zh)([-.].+)?\\."
+  - "(^|\\.)bn(app|trace)[a-z0-9-]*\\."
+  - "(^|\\.)saasexch([-.].+)?\\."
+  - "(^|\\.)okx([-.].+)?\\."
+  - "(^|\\.)okx[a-z0-9-]*\\."
   - "(^|\\.)bybit([-.].+)?\\."
   - "(^|\\.)coinbase([-.].+)?\\."
   - "(^|\\.)kraken([-.].+)?\\."
   - "(^|\\.)kucoin([-.].+)?\\."
+  - "(^|\\.)gate([-.].+)?\\."
   - "(^|\\.)bitget([-.].+)?\\."
   - "(^|\\.)mexc([-.].+)?\\."
   - "(^|\\.)htx([-.].+)?\\."
@@ -154,3 +316,4 @@ domain_regex_set:
   - "(^|\\.)trustwallet([-.].+)?\\."
   - "(^|\\.)walletconnect([-.].+)?\\."
   - "(^|\\.)tokenpocket([-.].+)?\\."
+  - "(^|\\.)web3modal([-.].+)?\\."
