@@ -1,6 +1,6 @@
 # 规则名称: Crypto
 # 用途: 交易所 / 钱包 / 常见 Web3 基础服务
-# 规则统计: 272
+# 规则统计: 273
 
 domain_set:
   # Binance
@@ -142,6 +142,7 @@ domain_suffix_set:
   - saasexch.com
   - saasexch.cc
   - okx.com
+  - okx.com.cdn.cloudflare.net
   - okx.vote
   - okex.com
   - okcoin.com
