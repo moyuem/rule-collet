@@ -1,6 +1,6 @@
 # 规则名称: Crypto
 # 用途: 交易所 / 钱包 / 常见 Web3 基础服务
-# 规则统计: 273
+# 规则统计: 325
 
 domain_set:
   # Binance
@@ -11,15 +11,34 @@ domain_set:
   - api2.binance.com
   - api3.binance.com
   - api4.binance.com
+  - api-gcp.binance.com
+  - data-api.binance.vision
+  - data.binance.vision
   - fapi.binance.com
   - dapi.binance.com
   - eapi.binance.com
   - stream.binance.com
+  - data-stream.binance.vision
+  - stream-sbe.binance.com
   - nbstream.binance.com
   - fstream.binance.com
   - dstream.binance.com
   - ws-api.binance.com
   - ws-fapi.binance.com
+  - fix-oe.binance.com
+  - fix-dc.binance.com
+  - fix-md.binance.com
+  - demo-api.binance.com
+  - demo-ws-api.binance.com
+  - demo-stream.binance.com
+  - demo-stream-sbe.binance.com
+  - api1.testnet.binance.vision
+  - stream.testnet.binance.vision
+  - stream-sbe.testnet.binance.vision
+  - ws-api.testnet.binance.vision
+  - fix-oe.testnet.binance.vision
+  - fix-dc.testnet.binance.vision
+  - fix-md.testnet.binance.vision
   - www.binance.us
   - api.binance.us
   - stream.binance.us
@@ -47,7 +66,19 @@ domain_set:
   - eea.okx.com
   - openapi.okx.com
   - ws.okx.com
+  - wspap.okx.com
+  - wsus.okx.com
+  - wsuspap.okx.com
+  - wseea.okx.com
+  - wspri.okx.com
+  - wspripap.okx.com
+  - wsdexpri.okx.com
   - static.okx.com
+  - static.okx.ac
+  - static.okx.cab
+  - static.okx.reise
+  - jpush.okx.com
+  - jpushws.okx.com
   - web3.okx.com
   - tr.okx.com
   - www.okex.com
@@ -83,7 +114,18 @@ domain_set:
 
   # Bitget
   - www.bitget.com
+  - api.bitget.com
+  - ws.bitget.com
+  - wspap.bitget.com
   - wallet.bitget.com
+  - web3.bitget.com
+  - img.bitgetimg.com
+  - img.bgstatic.com
+  - static.bgbstatic.com
+  - sgtm.btsgtm.com
+  - www.bitget.site
+  - www.bitgetapp.com
+  - www.bitgetapps.com
 
   # MEXC
   - www.mexc.com
@@ -119,6 +161,7 @@ domain_set:
 domain_suffix_set:
   # Exchanges (CEX)
   - binance.com
+  - binance.vision
   - binance.us
   - binance.info
   - binance.me
@@ -142,6 +185,9 @@ domain_suffix_set:
   - saasexch.com
   - saasexch.cc
   - okx.com
+  - okx.ac
+  - okx.cab
+  - okx.reise
   - okx.com.cdn.cloudflare.net
   - okx.vote
   - okex.com
@@ -174,6 +220,12 @@ domain_suffix_set:
   - gateimg.com
   - bitget.com
   - bitgetimg.com
+  - bitget.site
+  - bitgetapp.com
+  - bitgetapps.com
+  - bgstatic.com
+  - bgbstatic.com
+  - btsgtm.com
   - mexc.com
   - mexc.co
   - mxc.com
